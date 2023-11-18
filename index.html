@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Confess</title>
+    <style rel="stylesheet" href="dist/style.css"></style>
+    <script src="dist/alert.js"></script>
+    <script src="dist/showhide.js"></script>
+</head>
+<body class="bg-gradient-to-r from-pink-300 to-red-400 min-h-screen">
+    <div class="container mx-auto mt-44 p-10 bg-white shadow-lg max-w-lg rounded-lg">
+        <h1 class="text-3xl font-bold mt-4 text-pink-500 text-center" translate="no">To You</h1>
+        <div class="mt-6">
+        <p id="writing-text" class="text-gray-600 py-1" translate="no"></p>
+    </div>
+    </div>
+    <div id="submitform" class="hidden container mx-auto mt-44 p-10 bg-white shadow-lg max-w-lg rounded-lg">
+        <form action="query.php" method="post">
+            <label for="reason" aria-required="true" translate="no">Alasannya (optional):</label>
+            <textarea name="reason" id="reason" rows="4" cols="50" class="mt-1 p-2 block w-full border rounded-md shadow-sm focus:outline-none focus:border-blue-500 transition duration-300"></textarea>
+            <button translate="no" class="mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" name="status" value="yes" required>Mau</button>
+            <button translate="no" class="mt-4 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" name="status" value="no" required>Maaf Ya</button>
+        </form>
+    </div>
+
+    <script src="dist/widget.js"></script>
+</body>
+</html>

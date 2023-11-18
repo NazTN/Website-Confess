@@ -1,0 +1,12 @@
+#writing-text {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    border-right: 2px solid; /* Cursor effect */
+    animation: type 5s steps(40) forwards;
+}
+
+@keyframes type {
+    from { width: 0; }
+    to { width: 100%; }
+}
